@@ -5,20 +5,20 @@ def roman_to_int(numeral):#function responsible for converting Roman Numeral to 
     final_answer = 0
     for i in numeral:
         if i == "M":
-            final_answer += 1000
+            final_answer += 1000#Adds 1000 to value if M is in input
         elif i == "D":
-            final_answer += 500
+            final_answer += 500#Adds 500 to value if D is in input
         elif i == "C":
-            final_answer += 100
+            final_answer += 100#Adds 100 to value if C is in input
         elif i == "L":
-            final_answer += 50 
+            final_answer += 50#Adds 50 to value if L is in input 
         elif i == "X":
-            final_answer += 10
+            final_answer += 10#Adds 10 to value if X is in input
         elif i == "V":
-            final_answer += 5
+            final_answer += 5#Adds 5 to value if V is in input
         elif i == "I":
-            final_answer += 1 
-        print("The roman numerals you entered translates to: " + str(final_answer) + "!") 
+            final_answer += 1#Adds 1 to value if I is in input 
+        print("The roman numerals you entered translates to: " + str(final_answer) + "!") #Prints output
 
 
 roman_to_int(numeral_input)   
